@@ -1,16 +1,4 @@
 
-/* 
-основний текст #212121
-
- вторий колір757575
-
-білий колір - #FFFFFF
-
-акцент - #2196F3  
-
-background - #F5F4FA основ
-background: #2F303A  другий колір 
-*/
 :root {
     --primary-text-color: #757575;
     --sitenav-text-color: #212121;
@@ -19,7 +7,7 @@ background: #2F303A  другий колір
     --logo-text-color: #000000;
     --primary-background-color: #FFFFFF;
     --white-text-color: #FFFFFF;
-    v: rgba(255, 255, 255, 0.6);
+    --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -40,7 +28,7 @@ body {
 /* Логотип */
 .logo{
     text-decoration: none;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
 
     font-size: 26px;
     line-height: 1.19;
@@ -136,7 +124,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-
+    
     letter-spacing: 0.06em;
 }
 
@@ -217,11 +205,41 @@ body {
 }
 
 
+
 /* portfolio */
 
 .portfolio-list .title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    
+    letter-spacing: 0.06em;
 }
 
+.hero-portfolio .button {
+    color: var(--sitenav-text-color);
 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    cursor: pointer;
+}
+
+.hero-portfolio .button:hover,
+.hero-portfolio .button:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color); 
+}
+
+.portfolio,
+.portfolio-list {
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    list-style: none;
+}  
 
