@@ -19,7 +19,7 @@ background: #2F303A  другий колір
     --logo-text-color: #000000;
     --primary-background-color: #FFFFFF;
     --white-text-color: #FFFFFF;
-    --footer-text-color: rgba(255, 255, 255, 0.6);
+    v: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -158,7 +158,6 @@ body {
     line-height: 1.2;
 
     text-align: center;
-    
 }
 
 .feature-list .title {
@@ -169,7 +168,6 @@ body {
     line-height: 1.14;
     
     text-transform: uppercase;
-
 }
 
 /* Наша команда */
@@ -181,7 +179,12 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-   
+}
+
+.team-list,
+.feature-list,
+.work-list {
+    list-style: none;
 }
 
 
@@ -189,12 +192,18 @@ body {
 
 
 .footer-nav .link{
-    color: var(--primary-text-color);
+    color: var(--footer-text-color);
     text-decoration: none;
 }
 
 .footer-span {
     color: var(--white-text-color);
+}
+
+.footer-nav.list {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7; 
 }
 
 .footer-nav .link:hover,
