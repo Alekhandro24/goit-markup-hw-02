@@ -177,7 +177,7 @@ body {
     text-transform: uppercase;
 }
 
-.feature-list .p {
+.feature-list p {
 
     font-size: 14px;
     line-height: 1.7;
@@ -197,7 +197,7 @@ body {
     line-height: 1.19;
 }
 
-.team-list .p {
+.team-list p {
     font-size: 16px;
     line-height: 1.19;
         
@@ -300,7 +300,7 @@ footer {
     list-style: none;
 }  
 
-.portfolio-list .p {
+.portfolio-list p {
 
     font-family: inherit;
     font-size: 16px;
