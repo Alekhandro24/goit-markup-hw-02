@@ -8,6 +8,12 @@
     --primary-background-color: #FFFFFF;
     --white-text-color: #FFFFFF;
     --footer-text-color: rgba(255, 255, 255, 0.6);
+    --button-background-color: #0766b4;
+    --hero-background-color: #2F303A;
+    --team-background-color: #F5F4FA;
+    --footer-background-color:#2F303A;
+    --portfolio-button-bgc: #F5F4FA;
+
 }
 
 
@@ -42,13 +48,6 @@ body {
     color: var(--logo-text-color);
 }
 
-
-.logo-web:hover {
-    color: var(--logo-text-color);
-} 
-.logo-studio:hover {
-    color: var(--accent-color);
-}
 
 
 /* site-nav */
@@ -105,6 +104,7 @@ body {
 
 .hero-title {
     color: var(--white-text-color);
+    background-color: var(--hero-background-color); 
 
     font-weight: 900;
     font-size: 44px;
@@ -116,27 +116,50 @@ body {
 }
 
 .hero .button {
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
 
-    cursor: pointer;
-
+    
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 
 
 .button:hover{
     color: var(--white-text-color);
-    background-color: var(--accent-color)
+    background-color: var(--button-background-color);
 } 
 
 
 
 /* Преимущества нашей компании */
+
+.hidden-section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    
+    text-align: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+} 
+
 
 .section-title {
     color: var(--title-text-color);
@@ -176,6 +199,10 @@ body {
 }
 
 
+.team-section {
+    background-color: var(--team-background-color);
+}
+
 /* < !-- Footer --> */
 
 
@@ -204,6 +231,10 @@ body {
     color: var(--accent-color);
 }
 
+footer {
+    background-color: var(--footer-background-color);
+} 
+
 
 
 /* portfolio */
@@ -218,13 +249,26 @@ body {
     letter-spacing: 0.06em;
 }
 
+.portfolio-list .link {
+
+    color: var(--primary-text-color);
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.9;
+
+    text-decoration: none;
+} 
+
 .hero-portfolio .button {
     color: var(--sitenav-text-color);
+    background-color: var(--portfolio-button-bgc);
 
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    
+    letter-spacing: 0.03em;
     cursor: pointer;
 }
 
