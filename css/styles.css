@@ -21,7 +21,8 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
-
+    font-size: 14px;
+    letter-spacing: 0, 03em;
 }
 
 
@@ -135,9 +136,11 @@ body {
 
 /* Преимущества нашей компании */
 
-.hidden-section-title {
+.feature-section h2,
+.hero-portfolio h1 {
     color: var(--title-text-color);
-
+    background-color: #000000;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -149,12 +152,12 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-
+    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden; 
-} 
+    overflow: hidden;
+}
 
 
 .section-title {
@@ -217,7 +220,13 @@ body {
 }
 
 /* < !-- Footer --> */
+.footer-logo-web {
+    color: var(--accent-color);
+}
 
+.footer-logo-studio {
+    color: var(--white-text-color);
+}
 
 .footer-nav .link{
     color: var(--footer-text-color);
